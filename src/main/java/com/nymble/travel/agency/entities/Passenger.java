@@ -15,6 +15,9 @@ public class Passenger {
     private PassengerType type;
     private List<Activity> activities;
 
+    /**
+     * Print all the passenger details including the activities which the passenger has enrolled for.
+     */
     public void printDetails() {
         System.out.println("Passenger Details:");
         System.out.println("Name: " + name);

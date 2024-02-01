@@ -13,6 +13,9 @@ public class TravelPackage {
     private List<Destination> itinerary;
     private List<Passenger> passengers;
 
+    /**
+     * To print the itinerary for the particular travel package including the activity on all the destinations
+     */
     public void printItinerary() {
         System.out.println("Travel Package: " + name);
         for (Destination destination : itinerary) {
@@ -23,6 +26,9 @@ public class TravelPackage {
         }
     }
 
+    /**
+     * To print the passenger list in the travel package
+     */
     public void printPassengerList() {
         System.out.println("Passenger List for: " + name);
         System.out.println("Capacity: " + capacity);
@@ -32,6 +38,9 @@ public class TravelPackage {
         }
     }
 
+    /**
+     * To check and print the activities details which has still some space left for passengers to enroll
+     */
     public void printAvailableActivities() {
         System.out.println("Available Activities for " + name);
         for (Destination destination : itinerary) {
